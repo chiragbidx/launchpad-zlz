@@ -24,7 +24,6 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
 // Purpose: Client UI for /dashboard/settings.
-// Use this file for interactive form and browser-only settings UI logic.
 
 type ClientProps = {
   user: {
@@ -60,7 +59,7 @@ export default function Client({ user, status, message }: ClientProps) {
       <div className="mb-8">
         <h1 className="text-2xl font-semibold tracking-tight">Settings</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Manage your account profile, email, and security.
+          Manage your account profile, email, and security for MailForge.
         </p>
       </div>
 
@@ -119,7 +118,7 @@ export default function Client({ user, status, message }: ClientProps) {
               <CardTitle className="text-base">Profile</CardTitle>
             </div>
             <CardDescription>
-              Update your personal details. This is how others will see you.
+              Update your personal details for MailForge. This is how others will see you.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -173,7 +172,7 @@ export default function Client({ user, status, message }: ClientProps) {
               <CardTitle className="text-base">Email Address</CardTitle>
             </div>
             <CardDescription>
-              Change the email address associated with your account.
+              Change the email address associated with your MailForge account.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -274,7 +273,7 @@ export default function Client({ user, status, message }: ClientProps) {
               </CardTitle>
             </div>
             <CardDescription>
-              Permanently delete your account and all associated data. This
+              Permanently delete your MailForge account and all associated data. This
               action is irreversible.
             </CardDescription>
           </CardHeader>
